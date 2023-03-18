@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/ css?family=Poppins: 200, 300, 400, 500, 600, 700, 800, 900&display=swap');
+
+* 
+{
+  margin: 1px;
+  padding: 1px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+section{
+  position: fixed;
+  width: 90%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ background: linear-gradient(to right, #36393f, #2f3136, #202225, #0f1114);
+  
+}
+
+header{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 70px, 900px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+header .logo{
+    position: relative;
+    max-width: 100px;
+}
+header ul {
+  position: left;
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  display: inline-block;
+  color: #FFD700;
+  font-weight: 400;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox{
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textbox h2{
+    color: #ffffff;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight:    500em;
+}
+
+.content .textbox h2 span{
+    color:#FFD700;
+    font-size: 1.2em;
+    font-weight: 900;
+
+}
+
+.content .textbox p {
+    color:#ffffff;
+
+}
+
+.content .textbox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #FFD700;
+    border-radius: 40px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1px;
+    padding-left: 100px;
+}
+
+.main-area{
+
+  background: linear-gradient(to right, #36393f, #2f3136, #202225, #0f1114);
+  width: 100%;
+  height: 100vh;
+
+}
+
+.circles{
+     
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+@keyframes animate {
+          0%{
+
+            opacity: 1;
+            border-radius: 0;
+            transform: translateY(0) rotate(0deg);
+          }
+          100%{
+              opacity: 0;
+              border-radius: 50%;
+              transform: translateY(-1000px) rotate(720deg);
+          }
+  
+}
+
+.circles  div{
+
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(207, 199, 199, 0.815);
+        bottom: -150px;
+        animation: animate 25s linear infinite;
+}
+
+.circles div:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.circles div:nth-child(2){
+     left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;
+}
+.circles div:nth-child(3){
+   left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 8s;
+}
+.circles div:nth-child(4){
+   left: 100%;
+    width: 90px;
+    height: 80px;
+    animation-delay: 4s;
+}
+.circles div:nth-child(5){
+   left: 70%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 8s;
+}
+.circles div:nth-child(6){
+   left: 25%;
+    width: 80px;
+    height: 85px;
+    animation-delay: 4s;
+}
+.circles div:nth-child(7){
+   left: 90%;
+    width: 10px;
+    height: 80px;
+    animation-delay: 14s;
+}
+.circles div:nth-child(8){
+   left: 10%;
+    width: 90px;
+    height: 20px;
+    animation-delay: 5s;
+}
+.circles div:nth-child(9){
+   right: 40%;
+    width: 50px;
+    height: 20px;
+    animation-delay: 8s;
+}
+.circles div:nth-child(10){
+    right: 30%;
+    width: 70px;
+    height: 90px;
+    animation-delay: 3s;
+}
+
+body{
+   background: linear-gradient(to right, #36393f, #2f3136, #202225, #0f1114);
+}
+
+
